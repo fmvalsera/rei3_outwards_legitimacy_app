@@ -10,3 +10,8 @@ Basically these are the steps followed:
 1. A user working on a REI3 application launch a function that calls a Third Party API attaching a issued token by the "Outwards legitimacy" application.
 2. Before executing the call, the Third Party API checks the provided token asking back REI3 about its legitimacy.
 3. If the token exists in REI3 the Third Party API will go on with the call execution, otherwise an error will be returned.
+
+## Note
+It's important to say that, in the context of this project, we assume that the third party API has no authorization capabilities. Usually it will be a basic API, not a full featured commercial service, which must be modifiable in order to implement the token checking back to the REI3 platform.
+
+For further clarifications visit [this related discussion](https://community.rei3.de/d/223-about-oauth2-on-the-v37-roadmap/3) at REI3 forum.
